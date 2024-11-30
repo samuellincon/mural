@@ -1,0 +1,528 @@
+<html><head><base href="." /><title>Share, Report and Raise Awareness</title><meta charset="utf-8"><style>
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Update color palette */
+:root {
+  --primary: #2C3E50;
+  --secondary: #E74C3C;
+  --accent: #3498DB;
+  --light: #ECF0F1;
+  --dark: #2C3E50;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                linear-gradient(45deg, #2C3E50, #3498DB);
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.hero-section h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.hero-cta {
+    margin-top: 30px;
+}
+
+.hero-cta button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    margin: 0 10px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-cta button:hover {
+    background-color: white;
+    color: #2C3E50;
+}
+
+header {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+    background: linear-gradient(45deg, #2C3E50, #3498DB);
+    color: white;
+    border-radius: 10px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2C3E50;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #2C3E50;
+    color: white;
+}
+
+.share-container,
+.resources,
+.stats-section,
+.about-section,
+.case-study {
+    margin: 60px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+.share-container {
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+}
+
+.report-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+textarea, input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #E74C3C;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2C3E50;
+}
+
+.resources {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.resources h3 {
+    color: #3498DB;
+}
+
+.resources ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resources li {
+    margin-bottom: 10px;
+}
+
+.resources a {
+    color: #3498DB;
+    text-decoration: none;
+}
+
+.resources a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #666;
+}
+
+.stats-section {
+    background: linear-gradient(to right, #ECF0F1, white);
+    padding: 80px 20px;
+}
+
+.stats-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.stat-item {
+    padding: 20px;
+}
+
+.stat-number {
+    font-size: 3em;
+    font-weight: bold;
+    color: #E74C3C;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 1.1em;
+}
+
+.about-section {
+    background: linear-gradient(to bottom, white, #ECF0F1);
+}
+
+.about-section h2 {
+    color: #3498DB;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.about-item {
+    padding: 20px;
+    border-left: 4px solid #3498DB;
+    background: #f8f8f8;
+}
+
+.about-item h3 {
+    color: #3498DB;
+    margin-bottom: 15px;
+}
+
+.case-study {
+    background: white;
+    border-top: 5px solid #E74C3C;
+}
+
+.case-study h2 {
+    color: #3498DB;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.case-images {
+    margin: 30px 0;
+}
+
+.case-main-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.case-image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.case-image-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.case-image-grid img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .case-image-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.case-timeline {
+    position: relative;
+    margin: 40px 0;
+    padding-left: 30px;
+    border-left: 3px solid #3498DB;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -37px;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #E74C3C;
+    border: 4px solid white;
+}
+
+.timeline-date {
+    font-weight: bold;
+    color: #3498DB;
+    margin-bottom: 10px;
+}
+
+.highlight-box {
+    background: #ECF0F1;
+    border-left: 4px solid #E74C3C;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.impact-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.impact-item {
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Add section transitions */
+.share-container,
+.resources,
+.stats-section,
+.about-section,
+.case-study {
+    transition: transform 0.3s ease;
+}
+
+.share-container:hover,
+.resources:hover,
+.stats-section:hover,
+.about-section:hover,
+.case-study:hover {
+    transform: translateY(-5px);
+}
+</style></head><body>
+
+<section class="hero-section">
+    <h1>Igualdade Agora</h1>
+    <p>Juntos contra o racismo e a discriminação. Uma plataforma dedicada a dar voz àqueles que enfrentam injustiças e construir um futuro mais igualitário para todos.</p>
+    <div class="hero-cta">
+        <button onclick="window.location.href='https://example.com/share'">Compartilhe Sua História</button>
+        <button onclick="window.location.href='https://example.com/report'">Faça uma Denúncia</button>
+    </div>
+</section>
+
+<header>
+    <h1>Compartilhe Sua História</h1>
+    <p>Um espaço seguro para compartilhar experiências, denunciar casos de discriminação racial e encontrar apoio</p>
+</header>
+
+<nav class="nav-links">
+    <a href="https://example.com/share">Compartilhar História</a>
+    <a href="https://example.com/report">Fazer Denúncia</a>
+    <a href="https://example.com/resources">Recursos</a>
+    <a href="https://example.com/support">Apoio</a>
+</nav>
+
+<div class="share-container">
+    <h2>Faça Sua Denúncia</h2>
+    <form class="report-form" id="reportForm">
+        <input type="text" placeholder="Seu nome (opcional)" />
+        <input type="email" placeholder="Seu email (opcional)" />
+        <textarea rows="6" placeholder="Descreva sua experiência ou denúncia..."></textarea>
+        <input type="text" placeholder="Local do ocorrido" />
+        <input type="date" placeholder="Data do ocorrido" />
+        <button type="submit">Enviar Relato</button>
+    </form>
+</div>
+
+<div class="resources">
+    <h3>Recursos e Canais de Apoio</h3>
+    <ul>
+        <li><a href="https://www.gov.br/mdh/pt-br/disque100">Disque 100 - Disque Direitos Humanos</a></li>
+        <li><a href="https://www.defensoria.sp.def.br">Defensoria Pública</a></li>
+        <li><a href="https://www.policiacivil.sp.gov.br">Delegacia de Crimes Raciais e Delitos de Intolerância</a></li>
+        <li><a href="https://www.seppir.gov.br">Secretaria de Políticas de Promoção da Igualdade Racial</a></li>
+    </ul>
+</div>
+
+<section class="stats-section">
+    <div class="stats-container">
+        <div class="stat-item">
+            <div class="stat-number">5.482</div>
+            <div class="stat-label">Histórias Compartilhadas</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">3.291</div>
+            <div class="stat-label">Denúncias Processadas</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">842</div>
+            <div class="stat-label">Casos Resolvidos</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">12.567</div>
+            <div class="stat-label">Pessoas Apoiadas</div>
+        </div>
+    </div>
+</section>
+
+<section class="about-section">
+    <h2>Sobre Nossa Plataforma</h2>
+    <p>O Igualdade Agora é uma iniciativa criada em 2024 com o objetivo de combater o racismo e promover a igualdade racial através da conscientização, denúncia e apoio às vítimas de discriminação.</p>
+    
+    <div class="about-grid">
+        <div class="about-item">
+            <h3>Como Funciona</h3>
+            <p>Nossa plataforma permite que você compartilhe suas experiências de forma anônima ou identificada, faça denúncias formais e conecte-se com recursos legais e de apoio.</p>
+        </div>
+        <div class="about-item">
+            <h3>Nossa Missão</h3>
+            <p>Buscamos criar um ambiente seguro e acolhedor onde as vítimas de discriminação racial possam encontrar apoio, orientação e os recursos necessários para buscar justiça.</p>
+        </div>
+        <div class="about-item">
+            <h3>Processo de Denúncia</h3>
+            <p>Todas as denúncias são analisadas por nossa equipe e encaminhadas para os órgãos competentes quando necessário, garantindo o suporte adequado em cada caso.</p>
+        </div>
+    </div>
+</section>
+
+<section class="case-study">
+    <h2>O Caso Vini Jr.: Racismo no Futebol</h2>
+    <div class="case-images">
+        <img 
+            src="VJ.jpg" 
+            alt="Vinícius Jr. pointing to racist fans in Valencia stadium, photojournalistic style, 2023" 
+            width="800" 
+            height="500"
+            class="case-main-image"
+        >
+        <div class="case-image-grid">
+            <img 
+                src="mono.jpg" 
+                alt="Fans holding anti-racism banners supporting Vinícius Jr., news photograph, 2023" 
+                width="400" 
+                height="300"
+            >
+            <img 
+                src="mono.jpg" 
+                alt="Vinícius Jr. giving emotional speech about racism, press conference photo, 2023" 
+                width="400" 
+                height="300"
+            >
+            <img 
+                src="vini-jr-racismo.webp" 
+                alt="Real Madrid team wearing Vini Jr. shirts in solidarity, sports photograph, 2023" 
+                width="400" 
+                height="300"
+            >
+        </div>
+    </div>
+    <p>O jogador brasileiro Vinícius Júnior tem se tornado um símbolo na luta contra o racismo no futebol, especialmente após os repetidos ataques racistas sofridos na Liga Espanhola.</p>
+
+    <div class="case-timeline">
+        <div class="timeline-item">
+            <div class="timeline-date">Temporada 2022/23</div>
+            <p>Vini Jr. foi alvo de diversos ataques racistas em diferentes estádios da Espanha, incluindo insultos e gestos discriminatórios por parte de torcedores.</p>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">21 de maio de 2023</div>
+            <p>Durante o jogo Valencia x Real Madrid, Vini Jr. foi novamente vítima de racismo, com torcedores imitando sons de macaco. O jogo foi interrompido, e o jogador apontou os responsáveis nas arquibancadas.</p>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">Repercussão Internacional</div>
+            <p>O caso ganhou repercussão mundial, provocando manifestações de solidariedade de atletas, clubes e personalidades do esporte. O governo brasileiro convocou o embaixador da Espanha.</p>
+        </div>
+    </div>
+
+    <div class="highlight-box">
+        <h3>Posicionamento de Vini Jr.</h3>
+        <p>"O racismo é normal na La Liga. A competição acha normal, a Federação acha normal e os adversários incentivam. Lamento muito. O campeonato que já foi de Ronaldinho, Ronaldo, Cristiano e Messi, hoje é dos racistas."</p>
+    </div>
+
+    <div class="impact-section">
+        <div class="impact-item">
+            <h3>Mudanças na Legislação</h3>
+            <p>O caso contribuiu para mudanças nas leis espanholas contra o racismo no esporte</p>
+        </div>
+        <div class="impact-item">
+            <h3>Consciência Global</h3>
+            <p>Aumentou a visibilidade do racismo no futebol e a necessidade de combatê-lo</p>
+        </div>
+        <div class="impact-item">
+            <h3>Movimento #BastaDeRacismo</h3>
+            <p>Iniciativa global contra o racismo no esporte, inspirada pela coragem de Vini Jr.</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2024 - Platform Against Racial Discrimination | All Rights Reserved</p>
+</footer>
+
+<script>
+document.getElementById('reportForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    alert('Obrigado por compartilhar seu relato. Sua denúncia será analisada com atenção.');
+    
+    this.reset();
+});
+
+window.onbeforeunload = function() {
+    const form = document.getElementById('reportForm');
+    const formElements = form.elements;
+    for (let element of formElements) {
+        if (element.type !== 'submit' && element.value) {
+            return "Você tem alterações não salvas. Tem certeza que deseja sair?";
+        }
+    }
+};
+</script>
+
+</body></html>

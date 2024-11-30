@@ -1,0 +1,366 @@
+<html><head><base href="/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unidos Contra o Racismo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+        }
+
+        .hero {
+            background: linear-gradient(45deg, #000, #333);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .unity-hands {
+            width: 200px;
+            height: 200px;
+            margin: 2rem auto;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 2rem 0;
+            color: #333;
+        }
+
+        .types-racism {
+            margin: 3rem 0;
+        }
+
+        .type-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .type-card h3 {
+            color: #000;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+        }
+
+        .example-list {
+            list-style-type: none;
+            margin: 1rem 0;
+        }
+
+        .example-list li {
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .example-list li::before {
+            content: "•";
+            color: #333;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .type-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .join-movement {
+            background: #000;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .join-movement:hover {
+            background: #333;
+        }
+
+        footer {
+            background: #000;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .report-section {
+            background: #f8f8f8;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .report-section h2 {
+            color: #000;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .report-channels {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .report-channel {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .report-channel:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .report-channel h3 {
+            color: #000;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .report-channel p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .report-channel .contact {
+            color: #000;
+            font-weight: bold;
+            display: block;
+            margin-top: 0.5rem;
+        }
+
+        .emergency-note {
+            text-align: center;
+            color: #d32f2f;
+            font-weight: bold;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Unidos Contra o Racismo</h1>
+        <p>Juntos por um mundo de igualdade e respeito</p>
+        <svg class="unity-hands" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="45" fill="none" stroke="white" stroke-width="2"/>
+            <path d="M30,50 Q50,30 70,50" stroke="white" fill="none" stroke-width="2"/>
+            <path d="M30,60 Q50,40 70,60" stroke="white" fill="none" stroke-width="2"/>
+        </svg>
+    </section>
+
+    <div class="content">
+        <div class="quote">
+            "A injustiça em qualquer lugar é uma ameaça à justiça em todo lugar." - Martin Luther King Jr.
+        </div>
+
+        <div class="types-racism">
+            <div class="type-card">
+                <h3>Racismo Individual</h3>
+                <p>Manifestação direta de preconceito ou discriminação de uma pessoa contra outra.</p>
+                <ul class="example-list">
+                    <li>Insultos raciais diretos</li>
+                    <li>Evitar contato com pessoas de determinada raça</li>
+                    <li>Tratamento diferenciado em ambientes sociais</li>
+                </ul>
+            </div>
+
+            <div class="type-card">
+                <h3>Racismo Institucional</h3>
+                <p>Práticas discriminatórias sistemáticas em instituições e organizações.</p>
+                <ul class="example-list">
+                    <li>Menor acesso a oportunidades de emprego</li>
+                    <li>Discriminação em processos seletivos</li>
+                    <li>Tratamento desigual em instituições de ensino</li>
+                </ul>
+            </div>
+
+            <div class="type-card">
+                <h3>Racismo Estrutural</h3>
+                <p>Forma de racismo enraizada na organização política, econômica e social da sociedade.</p>
+                <ul class="example-list">
+                    <li>Desigualdade socioeconômica histórica</li>
+                    <li>Representatividade limitada em posições de poder</li>
+                    <li>Disparidades no acesso à educação e saúde</li>
+                </ul>
+            </div>
+
+            <div class="type-card">
+                <h3>Racismo Cultural</h3>
+                <p>Desvalorização ou discriminação de manifestações culturais de determinados grupos étnicos.</p>
+                <ul class="example-list">
+                    <li>Depreciar religiões de matriz africana</li>
+                    <li>Ridicularização de costumes e tradições</li>
+                    <li>Apropriação cultural sem respeito ou reconhecimento</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Educação</h3>
+                <p>A educação é fundamental para combater o racismo. Conhecimento e compreensão são as ferramentas mais poderosas para mudança.</p>
+            </div>
+            <div class="card">
+                <h3>Ação</h3>
+                <p>Não basta não ser racista, é necessário ser antirracista. Tome uma posição ativa contra a discriminação racial.</p>
+            </div>
+            <div class="card">
+                <h3>Solidariedade</h3>
+                <p>Unidos somos mais fortes. O apoio mútuo e a empatia são essenciais na luta contra o racismo.</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 3rem 0;">
+            <button class="join-movement" onclick="joinMovement()">Junte-se ao Movimento</button>
+        </div>
+
+        <div class="report-section">
+            <h2>Como Denunciar o Racismo</h2>
+            <div class="report-channels">
+                <div class="report-channel">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                        </svg>
+                        Disque 100
+                    </h3>
+                    <p>Canal oficial do governo para denúncias de violações de direitos humanos.</p>
+                    <span class="contact">Ligue: 100</span>
+                    <p>Disponível 24 horas, todos os dias da semana</p>
+                </div>
+
+                <div class="report-channel">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M7 7h10M7 12h10M7 17h10"/>
+                        </svg>
+                        Delegacia Online
+                    </h3>
+                    <p>Registre um Boletim de Ocorrência pela internet na delegacia virtual do seu estado.</p>
+                    <span class="contact">delegaciavirtuaL.policiacivil.gov.br</span>
+                </div>
+
+                <div class="report-channel">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 8v8M8 12h8"/>
+                        </svg>
+                        Ministério Público
+                    </h3>
+                    <p>Entre em contato com o MP do seu estado para denúncias formais.</p>
+                    <span class="contact">www.mpf.mp.br</span>
+                </div>
+
+                <div class="report-channel">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 2v20h-16v-20h16zM12 18h.01M8 6h8"/>
+                        </svg>
+                        Polícia Civil
+                    </h3>
+                    <p>Em caso de crime racial presencial, procure a delegacia mais próxima.</p>
+                    <span class="contact">Ligue: 197</span>
+                </div>
+            </div>
+            <p class="emergency-note">Em casos de emergência ou flagrante, ligue imediatamente para 190 (Polícia Militar)</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Unidos Contra o Racismo</p>
+        <p>Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+        function joinMovement() {
+            alert("Obrigado por seu interesse em se juntar à luta contra o racismo! \n\nAlgumas formas de ajudar:\n- Eduque-se sobre o tema\n- Combata o racismo quando o presenciar\n- Apoie organizações antirracistas\n- Compartilhe conhecimento\n- Pratique a empatia");
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    card.style.transition = 'all 0.5s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 200);
+            });
+
+            const typeCards = document.querySelectorAll('.type-card');
+            typeCards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateX(-20px)';
+                setTimeout(() => {
+                    card.style.transition = 'all 0.5s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateX(0)';
+                }, index * 200);
+            });
+        });
+    </script>
+</body>
+</html>

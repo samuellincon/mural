@@ -1,0 +1,325 @@
+<html><head><base href="/">
+    <title>Combate à Discriminação - Por uma Sociedade Mais Justa</title>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8ebef 100%);
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background-color: #FA8072; /* Salmon */
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #FFA07A;  /* Light Salmon */
+        }
+
+        .page {
+            max-width: 1200px;
+            margin: 80px auto 20px;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .hero-title {
+            text-align: center;
+            padding: 3rem 1rem;
+            margin-top: 60px;
+            background: linear-gradient(135deg, #FA8072 0%, #FFA07A 100%);
+            color: white;
+        }
+
+        .hero-title h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            border: none;
+            color: white;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        .hero-title p {
+            font-size: 1.5rem;
+            font-style: italic;
+            max-width: 800px;
+            margin: 0 auto;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #FA8072; /* Salmon */
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #FA8072; /* Salmon */
+            padding-bottom: 0.5rem;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FA8072; /* Salmon */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #FFA07A; /* Light Salmon */
+        }
+
+        .campaign-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .campaign-card {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .support-network {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .support-card {
+            flex: 1;
+            min-width: 250px;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .campaign-card svg circle {
+            fill: #FA8072; /* Salmon */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#intro">Introdução</a></li>
+            <li><a href="#awareness">Conscientização</a></li>
+            <li><a href="#report">Denúncias</a></li>
+            <li><a href="#campaigns">Campanhas</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-title">
+        <h1>COMBATE À DISCRIMINAÇÃO</h1>
+        <p>A luta contra a discriminação começa dentro de cada um de nós!</p>
+    </div>
+
+    <div class="page" id="intro">
+        <h1>Combate à Discriminação</h1>
+        <div class="section">
+            <h2>O que é Discriminação?</h2>
+            <p>A discriminação é qualquer distinção, exclusão, restrição ou preferência baseada em raça, cor, descendência, origem nacional ou étnica, gênero, orientação sexual, idade, religião, deficiência ou qualquer outra característica que tenha por objetivo anular ou prejudicar o reconhecimento, gozo ou exercício de direitos em igualdade de condições.</p>
+        </div>
+
+        <div class="section">
+            <h2>Importância do Combate à Discriminação</h2>
+            <p>O combate à discriminação é fundamental para construir uma sociedade mais justa, igualitária e democrática. A discriminação viola direitos humanos fundamentais, causa sofrimento psicológico, limita oportunidades e perpetua desigualdades sociais.</p>
+        </div>
+
+        <div class="section">
+            <h2>Objetivos do Site</h2>
+            <ul>
+                <li>Conscientizar sobre diferentes formas de discriminação</li>
+                <li>Informar sobre direitos e legislação antidiscriminação</li>
+                <li>Orientar sobre como denunciar casos de discriminação</li>
+                <li>Criar uma rede de apoio para vítimas</li>
+                <li>Promover ações e campanhas de combate à discriminação</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page" id="awareness">
+        <h1>Conscientização e Legislação</h1>
+        <div class="section">
+            <h2>Formas de Discriminação</h2>
+            <ul>
+                <li>Discriminação Racial</li>
+                <li>Discriminação de Gênero</li>
+                <li>Discriminação por Orientação Sexual</li>
+                <li>Discriminação Religiosa</li>
+                <li>Discriminação por Deficiência</li>
+                <li>Discriminação Etária</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Direitos das Vítimas</h2>
+            <ul>
+                <li>Direito à indenização por danos morais e materiais</li>
+                <li>Direito à assistência jurídica gratuita através da Defensoria Pública</li>
+                <li>Direito ao atendimento prioritário nas delegacias especializadas</li>
+                <li>Direito à proteção contra retaliação</li>
+                <li>Direito ao sigilo e privacidade durante o processo</li>
+                <li>Direito ao acompanhamento psicológico</li>
+                <li>Direito a medidas protetivas em casos de ameaça</li>
+                <li>Direito à preservação da identidade quando necessário</li>
+                <li>Direito ao afastamento do local de trabalho em casos de discriminação laboral</li>
+                <li>Direito à reinserção social e profissional</li>
+            </ul>
+            <p style="margin-top: 1rem;">
+                Toda pessoa que sofre discriminação tem direito a um tratamento digno e respeitoso por parte das autoridades e dos órgãos públicos, sem qualquer forma de discriminação adicional durante o processo de denúncia e investigação.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Legislação Antidiscriminação</h2>
+            <ul>
+                <li>Constituição Federal - Art. 5º</li>
+                <li>Lei 7.716/1989 - Lei contra o Racismo</li>
+                <li>Lei 11.340/2006 - Lei Maria da Penha</li>
+                <li>Lei 13.146/2015 - Lei Brasileira de Inclusão</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page" id="report">
+        <h1>Como Denunciar</h1>
+        <div class="section">
+            <h2>Canais de Denúncia</h2>
+            <ul>
+                <li>Disque 100 - Direitos Humanos</li>
+                <li>Disque 180 - Violência contra a Mulher</li>
+                <li><a href="https://www.gov.br/mdh/pt-br" class="button">Portal do Ministério dos Direitos Humanos</a></li>
+                <li>Delegacia mais próxima</li>
+                <li>Ministério Público</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Rede de Apoio</h2>
+            <div class="support-network">
+                <div class="support-card">
+                    <h3>Apoio Psicológico</h3>
+                    <p>CVV - Centro de Valorização da Vida</p>
+                    <p>Telefone: 188</p>
+                </div>
+                <div class="support-card">
+                    <h3>Apoio Jurídico</h3>
+                    <p>Defensoria Pública</p>
+                    <p>OAB - Ordem dos Advogados do Brasil</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="campaigns">
+        <h1>Campanhas e Como Contribuir</h1>
+        <div class="campaign-grid">
+            <div class="campaign-card">
+                <svg width="100" height="100" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" fill="#FA8072"/> <!-- Salmon -->
+                    <text x="50" y="55" text-anchor="middle" fill="white" font-size="14">Unidos</text>
+                </svg>
+                <h3>Campanha de Conscientização</h3>
+                <p>Participe compartilhando informações</p>
+            </div>
+            <div class="campaign-card">
+                <svg width="100" height="100" viewBox="0 0 100 100">
+                    <rect x="10" y="10" width="80" height="80" rx="10" fill="#e74c3c"/>
+                    <text x="50" y="55" text-anchor="middle" fill="white" font-size="14">Educar</text>
+                </svg>
+                <h3>Educação nas Escolas</h3>
+                <p>Voluntarie-se para palestras</p>
+            </div>
+            <div class="campaign-card">
+                <svg width="100" height="100" viewBox="0 0 100 100">
+                    <polygon points="50,10 90,90 10,90" fill="#2ecc71"/>
+                    <text x="50" y="70" text-anchor="middle" fill="white" font-size="14">Apoie</text>
+                </svg>
+                <h3>Apoio às Vítimas</h3>
+                <p>Doe para organizações de apoio</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Como Contribuir</h2>
+            <ul>
+                <li>Compartilhe informações sobre direitos</li>
+                <li>Denuncie casos de discriminação</li>
+                <li>Apoie organizações antidiscriminação</li>
+                <li>Eduque-se sobre diferentes culturas e realidades</li>
+                <li>Seja um aliado ativo na luta contra a discriminação</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body></html>
